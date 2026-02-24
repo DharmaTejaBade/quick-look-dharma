@@ -1,0 +1,148 @@
+/* =======================
+   Customers Page Styles
+   ======================= */
+
+/* --- Search Bar --- */
+.customers-search {
+  max-width: 410px;
+  margin-bottom: 24px;
+}
+
+/* --- Stats Grid --- */
+.customers-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.customers-stat-card {
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
+}
+
+.customers-stat-card.blue { background: #eef6ff; }
+.customers-stat-card.green { background: #f0fdf4; }
+.customers-stat-card.purple { background: #fbf7ff; }
+.customers-stat-card.red { background: #fef2f2; }
+
+.customers-stat-label { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px; }
+.customers-stat-value { font-size: 1.75rem; font-weight: 700; color: var(--text-main); display: flex; align-items: center; gap: 8px; }
+.customers-stat-subtext { font-size: 0.8rem; margin-left: 4px; }
+
+/* --- Table Card --- */
+.customers-table-card {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  overflow: visible; /* allow dropdowns to appear */
+  position: relative;
+}
+
+/* Table Filters */
+.customers-table-filters {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 16px;
+  position: relative; /* for dropdown */
+  overflow: visible;
+}
+
+.dropdown-text {
+  position: relative;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Dropdown Menu */
+.dropdown-text .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.25rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  min-width: 80px;
+  z-index: 999;
+}
+
+.dropdown-text .dropdown-menu li {
+  list-style: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.dropdown-text .dropdown-menu li:hover {
+  background: #f1f1f1;
+}
+
+.fa-chevron-down.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.2s;
+}
+
+/* --- Table --- */
+.customers-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customers-table th {
+  text-align: left;
+  padding: 16px 24px;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.85rem;
+  background: #fcfcfc;
+}
+
+.customers-table td {
+  padding: 16px 24px;
+  border-top: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+/* User Info */
+.user-info { display: flex; align-items: center; gap: 12px; }
+.user-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
+.user-name { font-weight: 600; font-size: 0.95rem; }
+
+/* Status Badges */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.status-active { background: var(--green-bg); color: var(--green-text); }
+.status-inactive { background: var(--orange-bg); color: var(--orange-text); }
+.status-churned { background: var(--red-bg); color: var(--red-text); }
+.status-purple { background: var(--purple-bg); color: var(--purple-text); }
+
+/* Table Footer / Pagination */
+.customers-table-footer {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border);
+}
+
+.customers-table-footer .btn {
+  padding: 4px 12px;
+  font-size: 0.85rem;
+}
+
+/* Small tweaks */
+.extra-small { font-size: 0.75rem; }
