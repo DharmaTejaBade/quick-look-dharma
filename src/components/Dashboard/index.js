@@ -70,7 +70,7 @@ export default function Dashboard() {
               <h6 className="text-muted small fw-bold">Avg Response</h6>
            </div>
            <div className="h2 fw-bold">1.4m</div>
-           <div className="extra-small text-primary fw-bold">↑ 2% vs Last Week</div>
+           <div className="extra-small text-primary fw-bold">↑ 6% vs Last Week</div>
         </div>
 
         {/* Status Card 3 (Timeline/Logs) */}
